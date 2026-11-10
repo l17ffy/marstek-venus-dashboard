@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Venus A 666e</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400..700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="appbar">
+  <div><h1>Venus A 666e</h1><p class="sub"><span id="src"></span> · <span data-i18n="updated"></span> <span id="t">—</span></p></div>
+  <div class="tools">
+  <button class="chip" id="lang" type="button"></button>
+  <span class="chip" style="color:var(--pri)" data-i18n-title="onlineTitle"><svg width="18" height="14" viewBox="0 0 20 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 5.5a11 11 0 0 1 16 0M5 8.8a7 7 0 0 1 10 0M8 12a3 3 0 0 1 4 0"/></svg><span data-i18n="online"></span></span>
+  </div>
+</header>
+
+<section class="card hero">
+  <div class="row"><span class="chip" data-i18n-title="batCount" data-i18n="bat1"></span><span class="chip fill" id="state">…</span></div>
+  <div class="ring">
+    <svg viewBox="0 0 200 200" aria-hidden="true"><circle class="trk" cx="100" cy="100" r="90"/><circle id="bar" cx="100" cy="100" r="90"/></svg>
+    <div class="mid"><div class="pct" id="soc">--%</div><div class="cap"><span id="kwh">--</span> <span data-i18n="kwh"></span></div></div>
+  </div>
+</section>
+
+<details class="card m" data-k="backup">
+  <summary><div class="sm"><div><span class="lbl" data-i18n="n_backup"></span><b class="val"><span id="bk">--</span></b></div></div></summary>
+</details>
+<details class="card m" data-k="battery">
+  <summary><div class="sm"><div><span class="lbl" data-i18n="n_battery"></span><b class="val"><span id="bt">--</span></b></div></div></summary>
+</details>
+<details class="card m" data-k="charged">
+  <summary><div class="sm"><div><span class="lbl" data-i18n="n_charged"></span><b class="val"><span id="cg">0.00</span> <span data-i18n="kwh"></span></b></div></div>
+    <div class="split"><i id="sg"></i></div>
+    <div class="leg"><span data-i18n="grid"></span> <b id="lg" style="font-weight:500">0.00</b> <span data-i18n="kwh"></span></div>
+  </summary>
+</details>
+<details class="card m" data-k="gridchg">
+  <summary><div class="sm"><div><span class="lbl" data-i18n="n_gridchg"></span><b class="val"><span id="chg2">--</span></b></div></div></summary>
+</details>
+<details class="card m" data-k="dis">
+  <summary><div class="sm"><div><span class="lbl" data-i18n="n_dis"></span><b class="val"><span id="dis">--</span></b></div></div></summary>
+</details>
+</main>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
